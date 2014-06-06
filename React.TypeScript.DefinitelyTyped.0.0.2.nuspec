@@ -12,7 +12,7 @@
         <tags>react reactjs typescript</tags>
     </metadata>
     <files>
-        <file src="..\gshell\node_modules\react-typescript-definitions\README.md" target="content\README.md" />
+        <file src="README.md" target="content\README.md" />
         <file src="react.d.ts" target="react.d.ts" />
     </files>
 </package>
