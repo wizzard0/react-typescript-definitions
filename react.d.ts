@@ -1,5 +1,9 @@
-// improved on https://github.com/fdecampredon/react-observe-todomvc/blob/typescript/src/declarations/react.d.ts
-// @license MIT because derived from TodoMVC sample which is MIT
+// Type definitions for React v0.10.0
+// Project: http://facebook.github.io/react/
+// Definitions by: @wizzard0 <https://github.com/wizzard0/>
+// Definitions by: @fdecampredon <https://github.com/fdecampredon/>
+// Definitions: https://github.com/wizzard0/react-typescript-definitions/
+// License: MIT
 
 declare module 'react' {
     export = React;
@@ -250,7 +254,7 @@ declare module React {
         /**
          * The propTypes object allows you to validate props being passed to your components.
          */
-        propTypes?: ReactPropTypes;
+        propTypes?: PropTypeValidatorOptions;
 
         /**
          * Invoked once before the component is mounted. The return value will be used as the initial value of this.state.
