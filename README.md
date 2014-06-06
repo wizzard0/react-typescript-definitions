@@ -7,3 +7,7 @@ With typings for React 0.10.0 and TS 1.0, but it’s kinda incomplete, so **pull
 
 Based on TodoMVC sample by @fdecampredon, improved by @wizzard0, MIT licensed.
 
+Include the file like this:
+
+    /// <reference path="../vendor/react-typescript-definitions/react.d.ts" />
+
