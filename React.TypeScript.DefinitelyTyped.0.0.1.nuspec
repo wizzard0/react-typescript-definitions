@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>React.TypeScript.DefinitelyTyped</id>
+        <version>0.0.1</version>
+        <authors>wizzard0</authors>
+        <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
+        <projectUrl>https://github.com/wizzard0/react-typescript-definitions</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>React.d.ts, file with ambient type declarations for working with Facebook React.</description>
+        <releaseNotes>typings for React 0.10.0 and TS 1.0</releaseNotes>
+        <tags>react reactjs typescript</tags>
+    </metadata>
+    <files>
+        <file src="..\gshell\node_modules\react-typescript-definitions\README.md" target="content\README.md" />
+        <file src="react.d.ts" target="react.d.ts" />
+    </files>
+</package>
