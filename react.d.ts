@@ -452,6 +452,7 @@ declare module React {
         autoComplete?: string;
         autoFocus?: boolean;
         checked?: any;
+        defaultValue?: any;
         disabled?: boolean;
         form?: string;
         height?: number;
