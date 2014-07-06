@@ -66,13 +66,18 @@ declare module React {
      * (incomplete)
     */
     export var PropTypes: ReactPropTypes;
+    export var addons: any;
 
     interface ReactPropTypes {
-        'function': PropTypeValidator;
+        'number': PropTypeValidator;
+        'string': PropTypeValidator;
+        'any': PropTypeValidator;
+        'func': PropTypeValidator;
         'object': PropTypeValidator;
         'array': PropTypeValidator;
         'arrayOf': TypedArrayValidatorFactory;
         'shape': ShapedObjectValidatorFactory;
+        'bool': PropTypeValidator;
     }
 
     interface PropTypeValidatorOptions {
@@ -412,6 +417,7 @@ declare module React {
 
 
     interface HTMLGlobalAttributes extends ReactAttributes, ReactEvents {
+        key?: any;
         accessKey?: string;
         className?: string;
         contentEditable?: string;
@@ -705,6 +711,8 @@ declare module React {
     interface StyleAttributes extends HTMLGlobalAttributes {
         type?: string;
     }
+
+    
 
     interface MenuAttributes extends HTMLGlobalAttributes {
         type?: string;
