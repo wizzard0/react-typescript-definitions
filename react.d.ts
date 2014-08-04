@@ -417,7 +417,7 @@ declare module React {
 
 
     interface HTMLGlobalAttributes extends ReactAttributes, ReactEvents {
-        key?: any;
+        key?: string;
         accessKey?: string;
         className?: string;
         contentEditable?: string;
