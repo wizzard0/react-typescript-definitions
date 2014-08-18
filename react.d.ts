@@ -49,17 +49,27 @@ declare module React {
     function unmountComponentAtNode(container: Element): boolean;
 
     /**
-     * Render a component to its initial HTML. This should only be used on the server. 
-     * React will call callback with an HTML string when the markup is ready. 
-     * You can use this method to can generate HTML on the server and send the markup down on the initial request for faster page loads 
-     * and to allow search engines to crawl your pages for SEO purposes. 
-     * If you call React.renderComponent() on a node that already has this server-rendered markup, 
+     * Render a component to its initial HTML. This should only be used on the server.
+     * React will return an HTML string. You can use this method to generate HTML on the server
+     * and send the markup down on the initial request for faster page loads and to allow search
+     * engines to crawl your pages for SEO purposes.
+     *
+     * If you call React.renderComponent() on a node that already has this server-rendered markup,
      * React will preserve it and only attach event handlers, allowing you to have a very performant first-load experience.
      * 
      * @param component the component to render
-     * @param callback a callback that will be executed with the result string
      */
-    function renderComponentToString(component: ReactComponent<any, any>, callback: (result: string) => void): void;
+    function renderComponentToString(component: ReactComponent<any, any>): string;
+
+    /**
+     * Similar to renderComponentToString, except this doesn't create extra DOM
+     * attributes such as data-react-id, that React uses internally. This is useful
+     * if you want to use React as a simple static page generator, as stripping
+     * away the extra attributes can save lots of bytes.
+     *
+     * @param component the component to render
+     */
+    function renderComponentToStaticMarkup(component: ReactComponent<any, any>): string;
 
     /**
      * Built-in Prop Type Validators
