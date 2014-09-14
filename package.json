@@ -5,6 +5,14 @@
   "files": ["react.d.ts", "LICENSE", "README.md"],
   "keywords": ["react", "reactjs", "typescript"],
   "homepage": "https://github.com/wizzard0/react-typescript-definitions",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wizzard0/react-typescript-definitions.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wizzard0/react-typescript-definitions/issues",
+    "email": "oleksandr+react-d-ts@tvori.info"
+  },
   "author": {
     "name": "Oleksandr Nikitin",
     "email": "oleksandr+react-d-ts@tvori.info",
