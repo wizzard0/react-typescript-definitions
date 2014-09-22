@@ -103,7 +103,7 @@ declare module React {
     }
 
     interface PropTypeValidator {
-        isRequired: RequiredPropTypeValidator
+        isRequired?: RequiredPropTypeValidator
     }
 
     interface RequiredPropTypeValidator extends PropTypeValidator {
