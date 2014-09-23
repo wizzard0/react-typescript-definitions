@@ -1,4 +1,4 @@
-// Type definitions for React v0.10.0
+// Type definitions for React v0.11.0
 // Project: http://facebook.github.io/react/
 // Definitions by: @wizzard0 <https://github.com/wizzard0/>
 // Definitions by: @fdecampredon <https://github.com/fdecampredon/>

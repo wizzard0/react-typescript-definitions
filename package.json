@@ -1,6 +1,6 @@
 {
   "name": "react-typescript-definitions",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "TypeScript definitions for Facebook React",
   "files": ["react.d.ts", "LICENSE", "README.md"],
   "keywords": ["react", "reactjs", "typescript"],
