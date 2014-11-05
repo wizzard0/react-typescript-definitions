@@ -2,13 +2,13 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
         <id>React.TypeScript.DefinitelyTyped</id>
-        <version>0.0.3</version>
+        <version>0.0.7</version>
         <authors>wizzard0</authors>
         <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
         <projectUrl>https://github.com/wizzard0/react-typescript-definitions</projectUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>React.d.ts, file with ambient type declarations for working with Facebook React.</description>
-        <releaseNotes>typings for React 0.10.0 and TS 1.0</releaseNotes>
+        <releaseNotes>typings for React 0.12.0 and TS 1.1</releaseNotes>
         <tags>react reactjs typescript</tags>
     </metadata>
     <files>

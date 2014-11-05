@@ -1,4 +1,4 @@
-// Type definitions for React v0.11.0
+// Type definitions for React v0.12.0
 // Project: http://facebook.github.io/react/
 // Definitions by: @wizzard0 <https://github.com/wizzard0/>
 // Definitions by: @fdecampredon <https://github.com/fdecampredon/>
@@ -10,6 +10,28 @@ declare module 'react' {
 }
 
 declare module React {
+
+    interface ReactElement<P, S> {
+        type: string;
+        props: P;
+        key: string?; // | boolean | number
+        ref : string?;
+    }
+
+    interface ReactClass<P, S> {
+
+    }
+
+    function createElement<P, S>(type: ReactClass<P, S>, config: ReactComponentSpec<P>, children?: any[]): ReactElement<P, S>
+
+    function createFactory<P, S>(type: ReactClass<P, S>): ReactComponentFactory<P>;
+
+    /**
+    * Render a ReactElement into the DOM in the supplied container and return a reference to the component.
+    * If the ReactElement was previously rendered into container, this will perform an update on it and only mutate the DOM as necessary to reflect the latest React component.
+    * If the optional callback is provided, it will be executed after the component is rendered or updated.
+    */
+    function render(element: ReactElement, domElement: Element, callback?: Function): void;
 
     /**
      * Configure React's event system to handle touch events on mobile devices.
@@ -26,7 +48,7 @@ declare module React {
      * @param spec the component specification
      */
     // we need mixins and type union here, until that manually specifies the type.
-    function createClass<P, S>(spec: ReactComponentSpec<P, S>): ReactComponentFactory<P>;
+    function createClass<P, S>(spec: ReactComponentSpec<P, S>): ReactClass<P, S>;
 
     /**
      * Render a React component into the DOM in the supplied container.
@@ -36,6 +58,7 @@ declare module React {
      * @param component the component to render
      * @param container the node that should contain the result of rendering
      * @param callback an optional callback that will be executed after the component is rendered or updated. 
+     * @deprecated
      */
     function renderComponent<C extends ReactComponent<any, any>>(component: C, container: Element, callback?: () => void): C;
 
