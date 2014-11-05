@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
         <id>React.TypeScript.DefinitelyTyped</id>
-        <version>0.1.7</version>
+        <version>0.1.8</version>
         <authors>wizzard0</authors>
         <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
         <projectUrl>https://github.com/wizzard0/react-typescript-definitions</projectUrl>

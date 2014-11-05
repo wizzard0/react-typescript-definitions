@@ -14,15 +14,15 @@ declare module React {
     interface ReactElement<P, S> {
         type: string;
         props: P;
-        key: string?; // | boolean | number
-        ref : string?;
+        key: string; // | boolean | number
+        ref : string;
     }
 
     interface ReactClass<P, S> {
 
     }
 
-    function createElement<P, S>(type: ReactClass<P, S>, config: ReactComponentSpec<P>, children?: any[]): ReactElement<P, S>
+    function createElement<P, S>(type: ReactClass<P, S>, config: ReactComponentSpec<P, S>, children?: any[]): ReactElement<P, S>
 
     function createFactory<P, S>(type: ReactClass<P, S>): ReactComponentFactory<P>;
 
@@ -31,7 +31,7 @@ declare module React {
     * If the ReactElement was previously rendered into container, this will perform an update on it and only mutate the DOM as necessary to reflect the latest React component.
     * If the optional callback is provided, it will be executed after the component is rendered or updated.
     */
-    function render(element: ReactElement, domElement: Element, callback?: Function): void;
+    function render(element: ReactElement<any, any>, domElement: Element, callback?: Function): void;
 
     /**
      * Configure React's event system to handle touch events on mobile devices.
