@@ -309,7 +309,7 @@ declare module React {
          * If you need to interact with the browser, perform your work in componentDidMount() or the other lifecycle methods instead. 
          * Keeping render() pure makes server rendering more practical and makes components easier to think about.
          */
-        render(): ReactComponent<any, any>;
+        render(): ReactElement<any, any>;
 
 
         /**
