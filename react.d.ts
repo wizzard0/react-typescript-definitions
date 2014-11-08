@@ -22,7 +22,9 @@ declare module React {
 
     }
 
-    function createElement<P, S>(type: ReactClass<P, S>, config: P, children?: any[]): ReactElement<P, S>
+    function createElement<P, S>(type: ReactClass<P, S>, config?: P, ...children: any[]): ReactElement<P, S>
+    // TODO types for specitic values
+    function createElement<P extends HTMLGlobalAttributes, S>(type: string, config?: P, ...children: any[]): ReactElement<P, S>
 
     function createFactory<P, S>(type: ReactClass<P, S>): ReactComponentFactory<P>;
 
