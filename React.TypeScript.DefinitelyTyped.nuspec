@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
         <id>React.TypeScript.DefinitelyTyped</id>
-        <version>0.1.12</version>
+        <version>0.1.13</version>
         <authors>wizzard0</authors>
         <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
         <projectUrl>https://github.com/wizzard0/react-typescript-definitions</projectUrl>
@@ -12,7 +12,7 @@
         <tags>react reactjs typescript</tags>
     </metadata>
     <files>
+	    <file src="Content\Scripts\typings\react\react.d.ts" target="Content\Scripts\typings\react\react.d.ts" />
         <file src="README.md" target="content\README.md" />
-        <file src="react.d.ts" target="react.d.ts" />
     </files>
 </package>
